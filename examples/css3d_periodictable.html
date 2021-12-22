@@ -100,7 +100,7 @@
 			import { CSS3DRenderer, CSS3DObject } from './jsm/renderers/CSS3DRenderer.js';
 
 			const table = [
-				"Hema", "26", "F", 'blue'
+				"Hema", "26", "F", 1, 1,
 				"Shiv", "26", "F", 18, 1,
 				"Alex", "26", "F", 1, 2,
 				"Shobanah", "26", "F", 2, 2,
@@ -242,6 +242,15 @@
 
 					const element = document.createElement( 'div' );
 					element.className = 'element';
+					
+					function colorChange() {
+    					if('table' = "F") {
+     					   element.style.color = 'green'; 
+     					   } else {
+                                           element.style.color = 'red';
+    						}
+						}
+					
 					
 					const number = document.createElement( 'div' );
 					number.className = 'number';
