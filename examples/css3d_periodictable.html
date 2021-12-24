@@ -222,9 +222,6 @@
 				"Ashwin", "26", "M", 17, 7,
 				"Ashan", "30", "M", 18, 7
 			];
-			
-			const element = document.createElement( 'div' );
-			element.className = 'element';
 				
        			 if (table == "F") {
        			 document.style.backgroundColor = 'rgba(245, 40, 145, 0.8)'; 
@@ -255,6 +252,8 @@
 
 				for ( let i = 0; i < table.length; i += 5 ) {
 					
+					const element = document.createElement( 'div' );
+					element.className = 'element';
 					
 					const number = document.createElement( 'div' );
 					number.className = 'number';
